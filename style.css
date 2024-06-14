@@ -12,7 +12,7 @@ justify-content: center;
 min-height: 100vh;
 background-color: rgb(111, 188, 255);
 }
-.container {
+.container{
     display: flex;
     width: 700px;
     gap: 70px;
@@ -22,11 +22,11 @@ background-color: rgb(111, 188, 255);
     align-items: flex-end;
     justify-content: space-between;
 }
-.hangman-box img {
+.spaceman-container img {
     user-select: none;
     max-width: 270px;
 }
-.hangman-box h1 { 
+.spaceman-container h1 { 
     font-size: 1.5rem;
     text-align: center;
     margin-top: 20px;
@@ -72,7 +72,7 @@ background-color: rgb(111, 188, 255);
     margin-top: 40px;
     justify-content: center;
 }
-:where(.game-modal, .keyboard) button {
+:where(.game-model, .keyboard) button {
     color: #fff;
     border: none;
     outline: none;
@@ -91,10 +91,10 @@ background-color: rgb(111, 188, 255);
     pointer-events: none;
     opacity: 0.6;
 }
-:where(.game-modal, .keyboard) button:hover {
+:where(.game-model, .keyboard) button:hover {
     background: #8df3a3;
 }
-.game-modal {
+.game-model {
     position: fixed;
     top: 0;
     left: 0;
@@ -110,12 +110,12 @@ background-color: rgb(111, 188, 255);
     padding: 0 10px;
     transition: opacity 0.4s ease;
 }
-.game-modal.show {
+.game-model.show {
     opacity: 1;
     pointer-events: auto;
     transition: opacity 0.4s 0.4s ease;
 }
-.game-modal .content {
+.game-model .content {
     padding: 30px;
     max-width: 420px;
     width: 100%;
@@ -124,26 +124,26 @@ background-color: rgb(111, 188, 255);
     text-align: center;
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
-.game-modal img {
+.game-model img {
     max-width: 130px;
     margin-bottom: 20px;
 }
-.game-modal img[src="images/victory.gif"] {
+.game-model img[src="images/victory.gif"] {
     margin-left: -10px;
 }
-.game-modal h4 {
+.game-model h4 {
     font-size: 1.53rem;
 }
-.game-modal p {
+.game-model p {
     font-size: 1.15rem;
     margin: 15px 0 30px;
     font-weight: 500;
 }
-.game-modal p b {
+.game-model p b {
     color: #5eba72;
     font-weight: 600;
 }
-.game-modal button {
+.game-model button {
     padding: 12px 23px;
 }
 
@@ -153,7 +153,7 @@ background-color: rgb(111, 188, 255);
         padding: 25px 20px;
         align-items: center;
     }
-    .hangman-box img {
+    .spaceman-container img {
         max-width: 200px;
     }
     .hangman-box h1 {
@@ -169,16 +169,16 @@ background-color: rgb(111, 188, 255);
     .word-display .letter.guessed {
         margin: -35px 0 25px;
     }
-    .game-modal img {
+    .game-model img {
         max-width: 120px;
     }
-    .game-modal h4 {
+    .game-model h4 {
         font-size: 1.45rem;
     }
-    .game-modal p {
+    .game-model p {
         font-size: 1.1rem;
     }
-    .game-modal button {
+    .game-model button {
         padding: 10px 18px;
     }
 }
